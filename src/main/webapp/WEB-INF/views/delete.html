@@ -11,20 +11,20 @@
                 <td><label>Name</label></td>
 
                 <td>
-                    <input type="text" th:field="*{name}">
+                    <input type="text" th:field="*{name}" readonly>
                 </td>
             </tr>
             <tr>
                 <td><label>Email</label></td>
-                <td><input type="text" th:field="*{email}" ></td>
+                <td th:f><input type="text" th:field="*{email}" readonly ></td>
             </tr>
             <tr>
                 <td><label>Address</label></td>
-                <td><input type="text" th:field="*{address}" ></td>
+                <td><input type="text" th:field="*{address}" readonly ></td>
             </tr>
             <tr>
                 <td><label>Age</label></td>
-                <td><input type="text" th:field="*{age}" ></td>
+                <td><input type="text" th:field="*{age}" readonly ></td>
             </tr>
             <tr><td><input type="submit" th:value="delete"></td></tr>
         </table>
