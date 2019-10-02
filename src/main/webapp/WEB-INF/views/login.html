@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+</head>
+<body>
+<p style="color: red" th:text="${message}"></p>
+<form action="/check" method="post">
+    <fieldset>
+        <legend>Login</legend>
+        <table>
+            <tr>
+                <td><label>Account</label></td>
+                <td><input type="text" name="account"></td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="login"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+<footer th:replace="layout :: footer"></footer>
+</form>
+</body>
+</html>

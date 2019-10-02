@@ -9,7 +9,7 @@ public interface CustomerService {
 
     Customer fillById(int id);
 
-    void update(int id,String name, String email, String address, int age);
+    void update(int id,Customer customer);
 
     void delete(int id);
 

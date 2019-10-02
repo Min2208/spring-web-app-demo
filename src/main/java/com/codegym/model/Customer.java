@@ -4,8 +4,9 @@ public class Customer {
     private int id;
     private String name;
     private String email;
+    public Customer(){};
 
-    public Customer(int id, String name, String email, String address, int age) {
+    public Customer(int id, String name, String email, String address, String age) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -15,7 +16,7 @@ public class Customer {
 
     private String address;
 
-    public Customer( String name, String email, String address, int age) {
+    public Customer( String name, String email, String address, String age) {
         this.name = name;
         this.email = email;
         this.address = address;
@@ -23,7 +24,7 @@ public class Customer {
     }
 
 
-    private int age;
+    private String age;
 
     public int getId() {
         return id;
@@ -57,11 +58,11 @@ public class Customer {
         this.address = address;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 }

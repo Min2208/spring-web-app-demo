@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: head">
+<body>
+
+<form>
+    <fieldset>
+        <legend>Customers</legend>
+        <table>
+            <tr>
+                <td><label>Name</label></td>
+                <td th:text="${customer.getName()}"></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td>
+                <td th:text="${customer.getEmail()}"></td>
+            </tr>
+            <tr>
+                <td><label>Address</label></td>
+                <td th:text="${customer.getAddress()}"></td>
+            </tr>
+            <tr>
+                <td><label>Age</label></td>
+                <td th:text="${customer.getAge()}"></td>
+            </tr>
+            <tr><td><a th:href="@{/home}">Back to home page</a></td></tr>
+        </table>
+
+    </fieldset>
+
+</form>
+<footer th:replace="layout :: footer"></footer>
+</body>
+</html>

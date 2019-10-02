@@ -10,11 +10,11 @@ public class CustomerServiceImpl implements CustomerService {
     public static int count=1;
 
     static {
-        customers.put(count++,new Customer(1,"Ronaldo","ronaldo@gmail.com", "Brazil",36));
-        customers.put(count++,new Customer(2,"Cr Ronaldo","cr7@gmail.com", "BDN",34));
-        customers.put(count++,new Customer(3,"Ronaldinho","ronaldinho@gmail.com", "Brazil",35));
-        customers.put(count++,new Customer(4,"Messi","m10@gmail.com", "Argentina",33));
-        customers.put(count++,new Customer(5,"kaka","kaka22@gmail.com", "Brazil",34));
+        customers.put(count++,new Customer(1,"Ronaldo","ronaldo@gmail.com", "Brazil","36"));
+        customers.put(count++,new Customer(2,"Cr Ronaldo","cr7@gmail.com", "BDN","34"));
+        customers.put(count++,new Customer(3,"Ronaldinho","ronaldinho@gmail.com", "Brazil","35"));
+        customers.put(count++,new Customer(4,"Messi","m10@gmail.com", "Argentina","33"));
+        customers.put(count++,new Customer(5,"kaka","kaka22@gmail.com", "Brazil","34"));
 
     }
 
@@ -39,12 +39,8 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public void update(int id, String name, String email, String address, int age) {
-        customers.get(id).setName(name);
-        customers.get(id).setEmail(email);
-        customers.get(id).setAddress(address);
-        customers.get(id).setAge(age);
-        customers.get(id).setId(id);
+    public void update(int id,Customer customer) {
+        customers.put(id,customer);
 
     }
 
